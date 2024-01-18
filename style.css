@@ -1,0 +1,122 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.website {
+    background-color: white;
+    width: 90%;
+    height: 80%;
+
+}
+
+header {
+    background-color: #BDBEC0;
+    height: 5%;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    color: #9B9CA0;
+}
+
+.blank {
+    width: 40%;
+    height: 15px;
+    border-radius: 5px;
+    border: 1px solid #9B9CA0;
+    background-color: #BDBEC0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.content {
+    display: flex;
+    height: 95%;
+}
+
+.content_left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+.content__content:first-child {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.weird {
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -moz-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+
+.content__content:nth-child(2) {
+    background-color: #6C01FF;
+}
+
+.content__content:nth-child(3) {
+    background-color: #FF1502;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.content__content:nth-child(4) {
+    background-color: white;
+}
+
+.content__content:nth-child(5) {
+    background-color: #FFC904;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.content_right {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.title {
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+
+.highlight {
+    background-color: #6E01FD;
+}
+
+.speakers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.artists {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
